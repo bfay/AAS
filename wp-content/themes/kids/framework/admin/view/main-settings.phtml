@@ -1,0 +1,27 @@
+<div class="tabbable tabs-left">
+	<!-- Sub Navigation -->
+	<ul class="nav nav-tabs span2 subnavigation">
+    	<?php foreach($ms_view['main_settings_menu'] as $item): ?>
+    		<li><a data-toggle="tab" href="#<?php echo $item['id']; ?>" ><i class="<?php echo $item['class'] ?>"></i><?php echo $item['name'] ?></a></li>
+    	<?php endforeach; ?>
+    </ul>
+    <!-- Sub Navigaiton End -->
+    
+    <div class="tab-content" id="section_contents">
+    <div style="position:fixed; right:25px; top:50px;z-index:10055;"> 
+        <a class="btn btn-primary btn-large save-button-action" href="#">Save Changes</a>
+    </div>
+    	<form id="main-settings-form" class="form-horizontal"> 
+
+    		<?php foreach ($ms_view['main_settings_menu'] as $i => $item): // By sections ?> 
+			<div id="<?php echo $item['id']; ?>" class="tab-pane fade <?php echo ($i < 1) ? 'in active' : ''; ?>">
+    			<?php foreach ($ms_view['tabs_content'][$item['id']] as $tab_content): //by section fields ?>
+    					<?php echo $this->parseField($tab_content, $item['id']); ?>
+    			<?php endforeach; ?>
+    		</div> <!-- <?php echo $item['id']; ?> end -->
+    		<?php  
+    		endforeach; ?>
+    	</form>  <!-- Main settings form end -->
+
+    </div>
+</div>

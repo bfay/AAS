@@ -1,0 +1,35 @@
+<!-- Main Container for administration panel -->
+
+<div id="theme-panel-wrapper">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+
+				<!-- Main Tabbed Navigation -->
+				<?php echo $this->renderTabButtons(); ?>	
+				<!-- Main_navigation end -->
+
+				<div class="tab-content">  
+					<!-- Main Section Tabs - Content -->
+
+					<?php foreach ($ms_view['tab_items'] as $k => $tab): ?>
+
+						<div id="<?php echo $tab['id']?>" class="tab-pane fade <?php echo ($k<1) ? 'in active':''; ?>"> 
+						<div class="container-fluid">
+							<div class="row-fluid">
+								<div class="span12">
+									<!-- Master Tab content -->
+										<?php if($this->file_ok($tab['content'])):
+								    		include_once($tab['content']);
+							      		endif ?>
+									<!-- Master Tab content End -->
+								</div>	<!-- .container-fluid End -->
+							</div>	<!-- .row-fluid End -->
+						</div> <!-- .span12 End -->
+						</div>   
+					<?php endforeach ?>
+				 
+			</div> <!-- .span12 -->
+		</div> <!-- .row-fluid -->
+	</div> <!-- .container-fluid -->
+</div><!-- # theme-panel-wrapper -->

@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+/* CSS related to a tinyMCE and shortcode buttons */
+.custom-admin-theme-css h4{ border-bottom: 1px solid #ccc; }
+.custom-admin-theme-css ul li {}
+.custom-admin-theme-css label { width:200px; display:inline-block;}
+/* Custom CSS for TinyMC Kids Theme Buttons */
+.mceIcon.mce_mls_mark{
+    background: url("../images/kids-tools.png") 2px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_mark:hover{
+    background: url("../images/kids-tools.png") 2px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_gallery{
+    background: url("../images/kids-tools.png") -58px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_gallery:hover{
+    background: url("../images/kids-tools.png") -58px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_iframe{
+    background: url("../images/kids-tools.png") -37px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_iframe:hover{
+    background: url("../images/kids-tools.png") -37px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_blockquote{
+    background: url("../images/kids-tools.png") -79px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_blockquote:hover{
+    background: url("../images/kids-tools.png") -79px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_quoteleft{
+    background: url("../images/kids-tools.png") -144px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_quoteleft:hover{
+    background: url("../images/kids-tools.png") -144px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_quoteright{
+    background: url("../images/kids-tools.png") -122px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_quoteright:hover{
+    background: url("../images/kids-tools.png") -122px -17px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_msg{
+    background: url("../images/kids-tools.png") -17px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_msg:hover{
+    background: url("../images/kids-tools.png") -17px -17px transparent no-repeat !important;
+}
+
+.mceIcon.mce_mls_devider{
+    background: url("../images/kids-tools.png") -254px -17px no-repeat scroll transparent !important;
+}
+
+.mceIcon.mce_mls_halfx2{
+    background: url("../images/kids-tools.png") -164px 3px transparent no-repeat !important;
+}
+.mceIcon.mce_mls_thirdx3{background: url("../images/kids-tools.png") -230px 3px transparent no-repeat !important;}
+.mceIcon.mce_mls_onethird_twothird{background: url("../images/kids-tools.png") -186px 3px transparent no-repeat !important;}
+.mceIcon.mce_mls_twothird_onethird{background: url("../images/kids-tools.png") -208px 3px transparent no-repeat !important;}
+.mceIcon.mce_mls_yt{background: url("../images/kids-tools.png") -273px 3px transparent no-repeat !important;}

@@ -1,0 +1,870 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+/*
+  Bootstrap's documentation styles
+  Special styles for presenting Bootstrap's documentation and examples
+*/
+
+
+/* Body and structure
+-------------------------------------------------- */
+body #theme-panel-wrapper {
+  position: relative;
+  padding-top: 10px;
+  background-color: #fff;
+  background-image: url(../images/grid-18px-masked.png);
+  background-repeat: repeat-x;
+  background-position: 0 0px;
+}
+
+#theme-panel-wrapper ul.admin-list{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#theme-panel-wrapper ul.admin-list li{
+    height: 22px;
+    border: 1px solid #E6E6E6;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    color: #08C;
+}
+#theme-panel-wrapper ul.admin-list li span{
+    display: block;
+    float:right;
+}
+#theme-panel-wrapper ul.admin-list li span a{
+    color: #08C;
+    font-size: 22px;
+    font-weight: bold;
+}
+#theme-panel-wrapper ul.admin-list li span a:hover{
+    color: #005580;
+}
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+#theme-panel-wrapper .navbar-fixed-top .brand {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px;
+  float: right;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+#theme-panel-wrapper .navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+
+
+/* Space out sub-sections more
+-------------------------------------------------- */
+#theme-panel-wrapper section {
+  padding-top: 60px;
+}
+
+/* Faded out hr */
+#theme-panel-wrapper hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+
+/* Jumbotrons
+-------------------------------------------------- */
+#theme-panel-wrapper .jumbotron {
+  position: relative;
+}
+#theme-panel-wrapper .jumbotron h1 {
+  margin-bottom: 9px;
+  font-size: 81px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+#theme-panel-wrapper .jumbotron p {
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+#theme-panel-wrapper .jumbotron .btn-large {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+/* Masthead (docs home) */
+#theme-panel-wrapper .masthead {
+  padding-top: 36px;
+  margin-bottom: 72px;
+}
+#theme-panel-wrapper .masthead h1,
+#theme-panel-wrapper .masthead p {
+  text-align: center;
+}
+#theme-panel-wrapper .masthead h1 {
+  margin-bottom: 18px;
+}
+#theme-panel-wrapper .masthead p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+/* Specific jumbotrons
+------------------------- */
+/* supporting docs pages */
+#theme-panel-wrapper .subhead {
+  padding-bottom: 0;
+  margin-bottom: 9px;
+}
+#theme-panel-wrapper .subhead h1 {
+  font-size: 54px;
+}
+
+/* Subnav */
+#theme-panel-wrapper .subnav {
+  width: 100%;
+  height: 36px;
+  background-color: #eeeeee; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* IE10+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* W3C */
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+#theme-panel-wrapper .subnav .nav {
+  margin-bottom: 0;
+}
+#theme-panel-wrapper .subnav .nav > li > a {
+  margin: 0;
+  padding-top:    11px;
+  padding-bottom: 11px;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+#theme-panel-wrapper .subnav .nav > .active > a,
+#theme-panel-wrapper .subnav .nav > .active > a:hover {
+  padding-left: 13px;
+  color: #777;
+  background-color: #e9e9e9;
+  border-right-color: #ddd;
+  border-left: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+     -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+}
+#theme-panel-wrapper .subnav .nav > .active > a .caret,
+#theme-panel-wrapper .subnav .nav > .active > a:hover .caret {
+  border-top-color: #777;
+}
+#theme-panel-wrapper .subnav .nav > li:first-child > a,
+#theme-panel-wrapper .subnav .nav > li:first-child > a:hover {
+  border-left: 0;
+  padding-left: 12px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+#theme-panel-wrapper .subnav .nav > li:last-child > a {
+  border-right: 0;
+}
+#theme-panel-wrapper .subnav .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media (min-width: 980px) {
+ #theme-panel-wrapper .subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-color: #d5d5d5;
+    border-width: 0 0 1px; /* drop the border on the fixed edges */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+  }
+#theme-panel-wrapper  .subnav-fixed .nav {
+    width: 938px;
+    margin: 0 auto;
+    padding: 0 1px;
+  }
+ #theme-panel-wrapper .subnav .nav > li:first-child > a,
+ #theme-panel-wrapper .subnav .nav > li:first-child > a:hover {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
+}
+
+
+/* Quick links
+-------------------------------------------------- */
+#theme-panel-wrapper .quick-links {
+  min-height: 30px;
+  padding: 5px 20px;
+  margin: 36px 0;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+#theme-panel-wrapper .quick-links li {
+  display: inline;
+  margin: 0 5px;
+  color: #999;
+}
+#theme-panel-wrapper .quick-links .github-btn,
+#theme-panel-wrapper .quick-links .tweet-btn,
+#theme-panel-wrapper .quick-links .follow-btn {
+  position: relative;
+  top: 5px;
+}
+
+
+/* Marketing section of Overview
+-------------------------------------------------- */
+#theme-panel-wrapper .marketing .row {
+  margin-bottom: 9px;
+}
+#theme-panel-wrapper .marketing h1 {
+  margin: 36px 0 27px;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+#theme-panel-wrapper .marketing h2,
+#theme-panel-wrapper .marketing h3 {
+  font-weight: 300;
+}
+#theme-panel-wrapper .marketing h2 {
+  font-size: 22px;
+}
+#theme-panel-wrapper .marketing p {
+  margin-right: 10px;
+}
+#theme-panel-wrapper .marketing .bs-icon {
+  float: left;
+  margin: 7px 10px 0 0;
+  opacity: .8;
+}
+#theme-panel-wrapper .marketing .small-bs-icon {
+  float: left;
+  margin: 4px 5px 0 0;
+}
+
+
+
+/* Footer
+-------------------------------------------------- */
+#theme-panel-wrapper .footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+#theme-panel-wrapper .footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+
+
+/* Special grid styles
+-------------------------------------------------- */
+#theme-panel-wrapper .show-grid {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#theme-panel-wrapper .show-grid [class*="span"] {
+  background-color: #eee;
+  text-align: center;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  min-height: 30px;
+  line-height: 30px;
+}
+#theme-panel-wrapper .show-grid:hover [class*="span"] {
+  background: #ddd;
+}
+#theme-panel-wrapper .show-grid .show-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#theme-panel-wrapper .show-grid .show-grid [class*="span"] {
+  background-color: #ccc;
+}
+
+
+/* Render mini layout previews
+-------------------------------------------------- */
+#theme-panel-wrapper .mini-layout {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+          box-shadow: 0 1px 2px rgba(0,0,0,.075);
+}
+#theme-panel-wrapper .mini-layout {
+  height: 240px;
+  margin-bottom: 20px;
+  padding: 9px;
+}
+#theme-panel-wrapper .mini-layout div {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+#theme-panel-wrapper .mini-layout .mini-layout-body {
+  background-color: #dceaf4;
+  margin: 0 auto;
+  width: 70%;
+  height: 240px;
+}
+#theme-panel-wrapper .mini-layout.fluid .mini-layout-sidebar,
+#theme-panel-wrapper .mini-layout.fluid .mini-layout-header,
+#theme-panel-wrapper .mini-layout.fluid .mini-layout-body {
+  float: left;
+}
+#theme-panel-wrapper .mini-layout.fluid .mini-layout-sidebar {
+  background-color: #bbd8e9;
+  width: 20%;
+  height: 240px;
+}
+#theme-panel-wrapper .mini-layout.fluid .mini-layout-body {
+  width: 77.5%;
+  margin-left: 2.5%;
+}
+
+
+/* Popover docs
+-------------------------------------------------- */
+#theme-panel-wrapper .popover-well {
+  min-height: 160px;
+}
+#theme-panel-wrapper .popover-well .popover {
+  display: block;
+}
+#theme-panel-wrapper .popover-well .popover-wrapper {
+  width: 50%;
+  height: 160px;
+  float: left;
+  margin-left: 55px;
+  position: relative;
+}
+#theme-panel-wrapper .popover-well .popover-menu-wrapper {
+  height: 80px;
+}
+#theme-panel-wrapper .large-bird {
+  margin: 5px 0 0 310px;
+  opacity: .1;
+}
+
+
+/* Download page
+-------------------------------------------------- */
+#theme-panel-wrapper .download .page-header {
+  margin-top: 36px;
+}
+#theme-panel-wrapper .page-header .toggle-all {
+  margin-top: 5px;
+}
+
+/* Space out h3s when following a section */
+#theme-panel-wrapper .download h3 {
+  margin-bottom: 5px;
+}
+#theme-panel-wrapper .download-builder input + h3,
+#theme-panel-wrapper .download-builder .checkbox + h3 {
+  margin-top: 9px;
+}
+
+/* Fields for variables */
+#theme-panel-wrapper .download-builder input[type=text] {
+  margin-bottom: 9px;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  color: #d14;
+}
+#theme-panel-wrapper .download-builder input[type=text]:focus {
+  background-color: #fff;
+}
+
+/* Custom, larger checkbox labels */
+#theme-panel-wrapper .download .checkbox {
+  padding: 6px 10px 6px 25px;
+  color: #555;
+  background-color: #f9f9f9;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  cursor: pointer;
+}
+#theme-panel-wrapper .download .checkbox:hover {
+  color: #333;
+  background-color: #f5f5f5;
+}
+#theme-panel-wrapper .download .checkbox small {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Variables section */
+#theme-panel-wrapper #variables label {
+  margin-bottom: 0;
+}
+
+/* Giant download button */
+#theme-panel-wrapper .download-btn {
+  margin: 36px 0 108px;
+}
+#theme-panel-wrapper .download p,
+#theme-panel-wrapper .download h4 {
+  max-width: 50%;
+  margin: 0 auto;
+  color: #999;
+  text-align: center;
+}
+#theme-panel-wrapper .download h4 {
+  margin-bottom: 0;
+}
+#theme-panel-wrapper .download p {
+  margin-bottom: 18px;
+}
+#theme-panel-wrapper .download-btn .btn {
+  display: block;
+  width: auto;
+  padding: 19px 24px;
+  margin-bottom: 27px;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+
+
+/* Color swatches on LESS docs page
+-------------------------------------------------- */
+/* Sets the width of the td */
+#theme-panel-wrapper .swatch-col {
+  width: 30px;
+}
+/* Le swatch */
+#theme-panel-wrapper .swatch {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin: -6px 0;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+/* For white swatches, give a border */
+#theme-panel-wrapper .swatch-bordered {
+  width: 28px;
+  height: 18px;
+  border: 1px solid #eee;
+}
+
+
+/* Misc
+-------------------------------------------------- */
+
+
+#theme-panel-wrapper .browser-support {
+  max-width: 100%;
+}
+
+/* Make tables spaced out a bit more */
+#theme-panel-wrapper h2 + table,
+#theme-panel-wrapper h3 + table,
+#theme-panel-wrapper h4 + table,
+#theme-panel-wrapper h2 + .row {
+  margin-top: 5px;
+}
+
+/* Example sites showcase */
+#theme-panel-wrapper .example-sites img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+#theme-panel-wrapper .marketing-byline {
+  margin: -18px 0 27px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #999;
+  text-align: center;
+}
+
+#theme-panel-wrapper .scrollspy-example {
+  height: 200px;
+  overflow: auto;
+  position: relative;
+}
+
+/* Remove bottom margin on example forms in wells */
+#theme-panel-wrapper form.well {
+  padding: 14px;
+}
+
+/* Tighten up spacing */
+#theme-panel-wrapper .well hr {
+  margin: 18px 0;
+}
+
+/* Fake the :focus state to demo it */
+#theme-panel-wrapper .focused {
+  border-color: rgba(82,168,236,.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+     -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+          box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+  outline: 0;
+}
+
+/* For input sizes, make them display block */
+#theme-panel-wrapper .docs-input-sizes select,
+#theme-panel-wrapper .docs-input-sizes input[type=text] {
+  display: block;
+  margin-bottom: 9px;
+}
+
+/* Icons
+------------------------- */
+#theme-panel-wrapper .the-icons {
+  margin-left: 0;
+  list-style: none;
+}
+#theme-panel-wrapper .the-icons i:hover {
+  background-color: rgba(255,0,0,.25);
+}
+
+/* Eaxmples page
+------------------------- */
+#theme-panel-wrapper .bootstrap-examples .thumbnail {
+  margin-bottom: 9px;
+  background-color: #fff;
+}
+
+
+/* Responsive Docs
+-------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Reduce padding above jumbotron */
+  body #theme-panel-wrapper  {
+    padding-top: 70px;
+  }
+
+  /* Change up some type stuff */
+  #theme-panel-wrapper h2 {
+    margin-top: 27px;
+  }
+  #theme-panel-wrapper h2 small {
+    display: block;
+    line-height: 18px;
+  }
+  #theme-panel-wrapper h3 {
+    margin-top: 18px;
+  }
+
+  /* Adjust the jumbotron */
+  #theme-panel-wrapper .jumbotron h1,
+  #theme-panel-wrapper .jumbotron p {
+    text-align: center;
+    margin-right: 0;
+  }
+  #theme-panel-wrapper .jumbotron h1 {
+    font-size: 45px;
+    margin-right: 0;
+  }
+  #theme-panel-wrapper .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #theme-panel-wrapper .jumbotron .btn {
+    display: block;
+    font-size: 18px;
+    padding: 10px 14px;
+    margin: 0 auto 10px;
+  }
+  /* Masthead (home page jumbotron) */
+  #theme-panel-wrapper .masthead {
+    padding-top: 0;
+  }
+
+  /* Don't space out quick links so much */
+  #theme-panel-wrapper .quick-links {
+    margin: 40px 0 0;
+  }
+  /* hide the bullets on mobile since our horizontal space is limited */
+  #theme-panel-wrapper .quick-links .divider {
+    display: none;
+  }
+
+  /* center example sites */
+  #theme-panel-wrapper .example-sites {
+    margin-left: 0;
+  }
+  #theme-panel-wrapper .example-sites > li {
+    float: none;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  #theme-panel-wrapper .example-sites .thumbnail > img {
+    max-width: 270px;
+  }
+
+  #theme-panel-wrapper table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  /*#theme-panel-wrapper .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }*/
+
+}
+
+
+@media (max-width: 768px) {
+  /* Remove any padding from the body */
+  body #theme-panel-wrapper {
+    padding-top: 0;
+  }
+
+  /* Jumbotron buttons */
+  #theme-panel-wrapper .jumbotron .btn {
+    margin-bottom: 10px;
+  }
+  /* Subnav */
+  #theme-panel-wrapper .subnav {
+    position: static;
+    top: auto;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    background: #fff; /* whole background property since we use a background-image for gradient */
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+  #theme-panel-wrapper .subnav .nav > li {
+    float: none;
+  }
+  #theme-panel-wrapper .subnav .nav > li > a {
+    border: 0;
+  }
+  #theme-panel-wrapper .subnav .nav > li + li > a {
+    border-top: 1px solid #e5e5e5;
+  }
+  #theme-panel-wrapper .subnav .nav > li:first-child > a,
+  #theme-panel-wrapper .subnav .nav > li:first-child > a:hover {
+      -webkit-border-radius: 4px 4px 0 0;
+         -moz-border-radius: 4px 4px 0 0;
+              border-radius: 4px 4px 0 0;
+  }
+
+  /* Popovers */
+  #theme-panel-wrapper .large-bird {
+    display: none;
+  }
+  #theme-panel-wrapper .popover-well .popover-wrapper {
+    margin-left: 0;
+  }
+  /* Space out the show-grid examples */
+  #theme-panel-wrapper .show-grid [class*="span"] {
+    margin-bottom: 5px;
+  }
+  /* Unfloat the back to top link in footer */
+  #theme-panel-wrapper .footer .pull-right {
+    float: none;
+  }
+  #theme-panel-wrapper .footer p {
+    margin-bottom: 9px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+
+  /* Scale down the jumbotron content */
+  #theme-panel-wrapper .jumbotron h1 {
+    font-size: 54px;
+  }
+  #theme-panel-wrapper .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+
+  /* Remove any padding from the body */
+  body #theme-panel-wrapper {
+    padding-top: 0;
+  }
+
+  /* Scale down the jumbotron content */
+  #theme-panel-wrapper .jumbotron h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  #theme-panel-wrapper .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* Inline-block quick links for more spacing */
+  #theme-panel-wrapper .quick-links li {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+/* LARGE DESKTOP SCREENS */
+@media (min-width: 1210px) {
+
+  /* Update subnav container */
+  #theme-panel-wrapper .subnav-fixed .nav {
+    width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
+  }
+
+}
+
+/* CUSTOMS - WORDPRESS OVERWRITE */
+#theme-panel-wrapper input[type="text"], #theme-panel-wrapper input[type="password"], #theme-panel-wrapper textarea{
+  -moz-box-sizing : content-box !important;
+}
+#theme-panel-wrapper .container-fluid{
+  padding-left: 0px;
+}
+#theme-panel-wrapper .tab-content .container-fluid{
+  padding: 0;
+}
+#theme-panel-wrapper .tab-content .container-fluid .well{
+  /*padding: 5px;*/
+}
+#theme-panel-wrapper .tab-content .container-fluid .nav-list{
+  padding-left: 5px;
+}
+#theme-panel-wrapper .tab-content .container-fluid .nav-list li{
+  line-height: 25px;
+}
+#theme-panel-wrapper .nav-tabs [class^="icon-"]{
+  margin-right: 5px;
+}
+#theme-panel-wrapper #main_settings_tab .nav.nav-tabs.span2{
+  margin-left: 0 !important;
+}
+#theme-panel-wrapper .form-horizontal.control-label{
+  font-weight: bold;
+}
+#theme-panel-wrapper .form-horizontal .control-label {
+  text-align: left;
+  padding-left: 8px;
+  font-weight: bold;
+  text-decoration: upper;
+}
+#theme-panel-wrapper .control-group.theme-section {
+  background-color: #fff;
+  border: 1px solid #DCD9D9;
+  background-image: -moz-linear-gradient(center top , #F5F5F9, #FEFEFE); /*boja za labeli #506DB5*/
+  /*background-image: -moz-linear-gradient(center top , #F2FF78, #54BC25); zelena varijamta */
+}
+#theme-panel-wrapper .control-group.theme-section label{
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;  /* plava506DB5;*/
+  font-size: 18px;
+  cursor: default;
+}
+#theme-panel-wrapper .btn:hover{
+  background-position: 25px;
+}
+#theme-panel-wrapper .help-block{
+  clear: both;
+}
+#theme-panel-wrapper .well-no-shadow {
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 20px;
+    min-height: 20px !important;
+    padding: 4px 10px !important;
+}
+#theme-panel-wrapper .control-group {
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 1px;
+    min-height: 20px;
+    padding: 8px 10px;
+}
+.well-no-shadow .control-label{margin-bottom: 0;}
+#theme-panel-wrapper .theme-section label{  width: 500px; padding-top: 0;}
+.fade{display: none;}
+.fade.in{display: block;}
+#theme-panel-wrapper .tab-content form > .tab-pane {  display: none;}
+#theme-panel-wrapper .tab-content form > .tab-pane.active { display: block;}
+#theme-panel-wrapper .accordion-heading .close{
+  position: relative;
+  right: 10px;
+  top: -29px;
+  display: block;
+  padding: 3px 5px;
+}
+#theme-panel-wrapper .number {margin-top:8px;}
+#theme-panel-wrapper #main_navigation {
+    padding: 14px 0 10px 5px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px 0 0px 5px;
+}

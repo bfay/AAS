@@ -1,0 +1,36 @@
+<!-- <a class="btn icon i_file_cabinet red save-button-action save-slider" style="float: right">Save Changes</a> -->
+<!-- SLIDER TAB -->
+
+<div id="sliders_tab" class="tab-pane fade in">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <h2>Slider Options&nbsp;<small>setup slider for your home page</small></h2>
+                <div style="position:fixed; right:20px; top:50px; z-index:10055"><a class="btn btn-primary btn-large save-button-action save-slider" href="#">Save Slider</a></div>
+                <form id="slider_form" class="form-horizontal slider_form">
+                    <div class="control-group theme-section well-no-shadow"><label class="control-label" >Incommon settings</label></div>
+                         <br class="slider_incommon_point" style="display: none;" />
+                        <?php //echo $this->parseField($sl_view_sliders['incommon']['slider_name'], $sl_view_current_slider_type . '__incommon');//parse slider name ?>
+                        <?php //echo $this->parseField($sl_view_sliders['incommon']['slider_type'], $sl_view_current_slider_type . '__incommon'); ?>
+
+                        <div class="control-group theme-section well-no-shadow slider-settings">
+                            <label class="control-label" >Slider settings</label>
+                        </div>
+                         <?php foreach ($sl_view_sliders[$sl_view_current_slider_type]['settings'] as $field){ //
+                      } ?> 
+                                    <div class="control-group theme-section well-no-shadow"><label class="control-label" >Slides</label></div>
+                                    <!-- <a class="btn icon i_file_cabinet red save-button-action save-slider" style="float: right">Save Changes</a>   -->   
+                                    <a href="#" class="btn btn-success add-new-slide">Add New Slide</a>
+                                    <!-- Single Slides -->
+                                    <br id="slide_start_point" style="display: none;" />
+                                    <!-- END Single Slides -->
+                                    <div class="control-group  well-no-shadow">
+                                        <div id="slides_container" class="accordion">
+                                        </div> <!-- Slides end -->
+                                    </div>
+                  <!-- acc -->
+              </form> <!-- Slider form -->
+          </div>
+      </div>
+  </div>
+</div> <!-- sliders_tab -->

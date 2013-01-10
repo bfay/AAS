@@ -9,46 +9,6 @@
 
 <?php get_header(); ?>
 
-<?php 
-    $featured_widget_on = $featured_post_id = $homepage_posts_ids = null;
-    
-    if($featured_on = Data()->isOn('mi_home.featured_section_switch')){
-        $featured_widget_on = Data()->isOn('mi_home.featured_section_widget_switch');
-        $featured_source_type = Data()->getMain('mi_home.featured_section_source_switch');
-        $featured_readmore_link_show = Data()->isOn('mi_home.featured_section_readmore_switch');
-        $featured_section_full = Data()->isOn('mi_home.featured_section_full');
-        
-        if($featured_source_type == 'post'){
-            $featured_item_id = Data()->getMain('mi_home.featured_section_post');
-            if(isset($featured_item_id)) {
-                $featured_item = get_post($featured_item_id);
-            }else{
-                //Featured post is not set. Get First Available post
-                $featured_item = $post;
-                $featured_item_id = $post->ID;
-            }
-        }
-        else
-        {//we are dealing with pages
-            $featured_item_id = Data()->getMain('mi_home.featured_section_page');
-            if(isset($featured_item_id)) {
-                $featured_item = get_page($featured_item_id);
-            }else{
-                //Featured post is not set. Get First Available post
-                $featured_item = $post;
-                $featured_item_id = $post->ID;
-            }
-        }
-    }
-    /* Middle section of the page */
-    $homepage_cagetory_id = Data()->getMain('mi_home.content_section_category');
-    $homepage_cagetory_id = $homepage_cagetory_id == '' || empty($homepage_cagetory_id) ? null : $homepage_cagetory_id;
-    $readmore  = Data()->getMain('mi_blog.readmore');
-    
-    $is_slider_off  = Data()->isOn('mi_home.slider_hide_switch');
-    $middle_area_on = Data()->isOn('mi_home.middle_switch');
-?>
-
 <div id="content" class="home">
 <?= do_shortcode('[layerslider id="1"]'); ?>
 </div>

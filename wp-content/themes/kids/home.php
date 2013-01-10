@@ -32,25 +32,31 @@
         }
     }
     /* Middle section of the page */
-
+    $homepage_cagetory_id = Data()->getMain('mi_home.content_section_category');
+    $homepage_cagetory_id = $homepage_cagetory_id == '' || empty($homepage_cagetory_id) ? null : $homepage_cagetory_id;
     $readmore  = Data()->getMain('mi_blog.readmore');
     
-  
+    $is_slider_off  = Data()->isOn('mi_home.slider_hide_switch');
     $middle_area_on = Data()->isOn('mi_home.middle_switch');
 ?>
 
 <div id="content" class="home">
-
+<?php if(!$is_slider_off) : ?>
+    <?php 
+        mls_renderSlider(Data()->getSldr(), true); //generates whole slider section including Scrolling categories if activated!!!
+    ?>
+<?php else: ?>
+   <style type="text/css">
+        body {
+            background: none !important;
+        }
+    </style>    
+<?php endif; ?>
+    <?php if($featured_on): ?>
     <div id="featured">
         <div class="wrap">
                
                 <div class="<?php echo ($featured_widget_on ? 'c-8':'c-12') ?>">
-                <div class="my_slider">
-<?= do_shortcode('[layerslider id="1"]'); ?>
-</div>
-<div class="opt-in">
-<img src="http://www.allergiesatschool.com/wp-content/themes/kids/images/opt-in.png">
-</div>
                     <div class="page">
                         <h2><a title="<?php the_title_attribute(); ?>" href="<?php echo get_permalink($featured_item->ID); ?>"><?php echo strtoupper($featured_item->post_title); ?></a></h2>
                         <?php if($featured_section_full) :?>

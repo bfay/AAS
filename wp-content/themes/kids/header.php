@@ -31,6 +31,10 @@ $logo_w = (Data()->getMain('mi_look_feel.logo_width') !='' && Data()->getMain('m
     
     <!-- WP Tags goes here -->
 	<meta name="keywords" content="<?php echo csv_tags(); ?>" />
+	
+	<link rel="stylesheet"  href="http://www.alertsforallergies/wp-content/themes/reverie/css/foundation.css" type="text/css" media="all">
+	
+	
 	    
     <!-- Favicon -->
 	<link rel="shortcut icon" href="<?php echo Data()->getMain('mi_look_feel.mi_favicon'); ?>" type="image/x-icon" />

@@ -1768,9 +1768,36 @@ a[rel='example_group'] { display: inline-block !important;}
 
 /* !Custom Code */
 
+
+
+.slider-container {
+	width: 100%;
+	max-width: 964px;
+	display: block;
+	float: left;
+	height: 320px;
+}
+
+.my-slider {
+	display: block;
+	height: 300px;
+	width: 90%;
+	float: left;
+	
+}
+
+
 .opt-in{
 	display: inline-block;
-	width: 367px;
+	max-width: 367px;
 	height: 300px;
+	width: 100%;
+	float: right;
+}
+
+.social-right {
+	display: block;
+	float: right;
+	
 }
 

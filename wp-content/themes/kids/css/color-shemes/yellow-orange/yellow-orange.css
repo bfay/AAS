@@ -71,7 +71,7 @@ span.previous:hover { background-position: 0 -53px; }
 span.next { background-position: 6px -41px; }
 span.next:hover { background-position: 6px -30px; }
 
-#cat-slider { background: url("homepage-slider-bg.jpg") no-repeat scroll 0 1px transparent; }
+#cat-slider { background: transparent; }
 #cat-slider h2 { color: #f55029; }
 #cat-slider a { color: #f8ab01; }
 #cat-slider a:hover { color: #f55029; }

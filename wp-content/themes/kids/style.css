@@ -849,14 +849,25 @@ ul.subfooter-menu li a {
     left:-155px;
 }
 
-#slider-bg {
+/*#slider-bg {
     left: -102px;
     position: absolute;
     top: 105px;
     z-index: 1;
-	height: 235px;
-    width: 1117px;
-}
+	height: 251px;
+    width: 1200px;
+}*/
+
+#slider-bg {
+    margin: 105px auto;
+    position: relative;
+    z-index: 1;
+	height: 251px;
+    width: 1200px;
+    float: none;
+    display: block;
+    }
+
   
 /*---------------- Big slider */
 #slider #big-slider {
